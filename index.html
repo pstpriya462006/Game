@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Rock Paper Scissors</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main container for the game -->
+  <div class="game-container">
+    <header>
+      <!-- Game Title -->
+      <h1>Rock Paper Scissors</h1>
+      <!-- Settings Section -->
+      <div class="settings">
+        <!-- Button to toggle between light and dark themes -->
+        <button id="toggle-theme">Switch to Dark Mode</button>
+        <!-- Input to update the player's name -->
+        <input type="text" id="player-name" placeholder="Enter your name" />
+      </div>
+    </header>
+    <main>
+      <!-- Display current round information -->
+      <p id="round-info">Round: 0 / 5</p>
+      <!-- Timer for each round -->
+      <div id="timer">Time Left: <span id="time-left">5</span> seconds</div>
+      <!-- Visual progress bar for the game -->
+      <div class="progress-bar">
+        <div id="progress" style="width: 0%;"></div>
+      </div>
+      <!-- Buttons for player choices -->
+      <div class="buttons">
+        <button id="rock">✊ Rock</button>
+        <button id="paper">✋ Paper</button>
+        <button id="scissors">✌️ Scissors</button>
+      </div>
+      <!-- Section to display messages and scores -->
+      <div class="result">
+        <p id="message">Make your choice!</p>
+        <p id="outcome"></p>
+        <p id="score">Player: 0 | Computer: 0</p>
+      </div>
+    </main>
+    <footer>
+      <!-- Restart button -->
+      <button id="restart" disabled>🔄 Restart Game</button>
+      <!-- Achievements Section -->
+      <div class="achievements">
+        <h2>Achievements</h2>
+        <ul id="achievement-list">
+          <!-- Achievement items will be dynamically added here -->
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
